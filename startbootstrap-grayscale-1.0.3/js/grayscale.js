@@ -8,8 +8,12 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $("#logo").addClass("logo-collapse");
+        $("#logo").removeClass("logo-no-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $("#logo").addClass("logo-no-collapse");
+        $("#logo").removeClass("logo-collapse");
     }
 });
 
